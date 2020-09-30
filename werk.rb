@@ -5,6 +5,8 @@ class Werk < Formula
     version "0.1.1"
     sha256 "f245c4e1b37b4f0c02a98046964376089f225dedcf27a279894c359142774d60"
     license "MIT"
+    
+    depends_on "libyaml"
 
     def install
         bin.install "werk-macos" => "werk"
