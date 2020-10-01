@@ -7,8 +7,6 @@ class Werk < Formula
     license "MIT"
     
     depends_on "libyaml"
-    depends_on "libpcre"
-    depends_on "libevent"
 
     def install
         bin.install "werk-macos" => "werk"
