@@ -11,7 +11,7 @@ class Werk < Formula
     depends_on "pcre"
 
     def install
-        bin.install "werk-macos" => "werk"
+        bin.install "werk-macos-10.15" => "werk"
     end
 
     test do
