@@ -1,9 +1,9 @@
 class Werk < Formula
     desc "Dead simple task runner"
     homepage "https://itwerks.io"
-    url "https://github.com/marghidanu/werk/releases/download/0.1.10/werk-macos-10.15"
-    version "0.1.10"
-    sha256 "a0dbbfce81fec6e1d49366159ade6c79e238c06655a21193fa5a83a14471e766"
+    url "https://github.com/marghidanu/werk/releases/download/0.1.11/werk-macos-10.15"
+    version "0.1.11"
+    sha256 "489f803fad80b73a41a85af881dc2ec6871c36bb04411056ec0e3a7681d68aca"
     license "MIT"
     
     depends_on "libyaml"
