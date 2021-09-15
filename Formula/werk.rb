@@ -1,9 +1,9 @@
 class Werk < Formula
     desc "Dead simple task runner"
     homepage "https://itwerks.io"
-    url "https://github.com/marghidanu/werk/releases/download/0.5.4/werk-darwin-x64"
-    version "0.5.4"
-    sha256 "42a6eb30d2184af6ea9dae8f17547c08545d740fc399e5fda33e269fbb7dde29"
+    url "https://github.com/marghidanu/werk/releases/download/0.6.0/werk-darwin-x64"
+    version "0.6.0"
+    sha256 "1893c346f21b73950e8716584fce8edd5064849b6023e00c50c5a4a057aa1131"
     license "MIT"
     
     depends_on "libyaml"
