@@ -8,6 +8,7 @@ class Werk < Formula
     
     depends_on "libyaml"
     depends_on "libevent"
+    depends_on "openssl"
     depends_on "pcre"
 
     def install
