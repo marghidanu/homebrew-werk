@@ -6,13 +6,11 @@ class Werk < Formula
     sha256 "4d5d1ad208fb05b274271d46f0cb0018cd6b259f0ae8010bf5352d7f2e81d7dd"
     license "MIT"
     
-    depends_on "libyaml"
-    depends_on "libevent"
-    depends_on "openssl"
-    depends_on "pcre"
+    depends_on "crystal" => :build
 
     def install
-        bin.install "werk-darwin-x64" => "werk"
+        system "shards", "build", "--release", "--no-debug"
+        bin.install "bin/werk" => "werk"
     end
 
     test do
