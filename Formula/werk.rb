@@ -9,7 +9,7 @@ class Werk < Formula
     depends_on "crystal" => :build
 
     def install
-        ["src/version.cr", "shard.yml"].each do |file|
+        ["src/werk.cr", "shard.yml"].each do |file|
             data = File.read(file).gsub("0.0.0", version)
             File.open(file, "w") { |f| f.write(data) }
         end
