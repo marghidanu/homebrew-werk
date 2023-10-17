@@ -16,9 +16,10 @@ class Werk < Formula
         end
 
         puts "PKG_CONFIG_PATH: #{ENV["PKG_CONFIG_PATH"]}"
-        system "pkg-config", "--list-all"
-        system "pkg-config", "--libs", "libcrypto"
-        system "pkg-config", "--libs", "openssl"
+        puts `pkg-config --list-all`
+        puts `pkg-config --libs libcrypto`
+        puts `pkg-config --libs openssl`
+
 
         # system "shards", "build", "--release", "--no-debug"
         # bin.install "bin/werk" => "werk"
