@@ -16,8 +16,9 @@ class Werk < Formula
         end
 
         system "pkg-config", "--libs", "libcrypto"
+        system "pkg-config", "--libs", "openssl"
         # system "shards", "build", "--release", "--no-debug"
-        bin.install "bin/werk" => "werk"
+        # bin.install "bin/werk" => "werk"
     end
 
     test do
