@@ -15,6 +15,7 @@ class Werk < Formula
             File.open(file, "w") { |f| f.write(data) }
         end
 
+        ENV["PKG_CONFIG_PATH"] = "#{ENV["PKG_CONFIG_PATH"]}:#{Formula["openssl@3"].opt_lib}/pkgconfig"
         system "pkg-config", "--libs", "libcrypto"
         system "pkg-config", "--libs", "openssl"
         # system "shards", "build", "--release", "--no-debug"
