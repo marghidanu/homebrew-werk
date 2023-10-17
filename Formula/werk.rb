@@ -7,9 +7,10 @@ class Werk < Formula
     license "MIT"
 
     depends_on "crystal" => :build
-    depends_on "openssl@3"
 
     def install
+        system "pkg-config", "--cflags", "openssl"
+        
         ["src/werk.cr", "shard.yml"].each do |file|
             data = File.read(file).gsub("0.0.0", version)
             File.open(file, "w") { |f| f.write(data) }
