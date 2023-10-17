@@ -14,7 +14,7 @@ class Werk < Formula
             File.open(file, "w") { |f| f.write(data) }
         end
 
-        system "pkg-config", "--lib", "libcrypto"
+        system "pkg-config", "--libs", "libcrypto"
         # system "shards", "build", "--release", "--no-debug"
         bin.install "bin/werk" => "werk"
     end
