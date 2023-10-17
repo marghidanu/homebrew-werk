@@ -20,9 +20,8 @@ class Werk < Formula
         puts `pkg-config --libs libcrypto`
         puts `pkg-config --libs openssl`
 
-
-        # system "shards", "build", "--release", "--no-debug"
-        # bin.install "bin/werk" => "werk"
+        system "shards", "build", "--release", "--no-debug"
+        bin.install "bin/werk" => "werk"
     end
 
     test do
