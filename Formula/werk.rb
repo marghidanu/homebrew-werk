@@ -8,15 +8,14 @@ class Werk < Formula
 
     depends_on "crystal" => :build
 
-    def install
-        system "pkg-config", "--cflags", "openssl"
-        
+    def install        
         ["src/werk.cr", "shard.yml"].each do |file|
             data = File.read(file).gsub("0.0.0", version)
             File.open(file, "w") { |f| f.write(data) }
         end
 
-        system "shards", "build", "--release", "--no-debug"
+        system "pkg-config", "--lib", "libcrypto"
+        # system "shards", "build", "--release", "--no-debug"
         bin.install "bin/werk" => "werk"
     end
 
