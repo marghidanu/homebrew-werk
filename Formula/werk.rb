@@ -15,11 +15,6 @@ class Werk < Formula
             File.open(file, "w") { |f| f.write(data) }
         end
 
-        puts "PKG_CONFIG_PATH: #{ENV["PKG_CONFIG_PATH"]}"
-        puts `pkg-config --list-all`
-        puts `pkg-config --libs libcrypto`
-        puts `pkg-config --libs openssl`
-
         system "shards", "build", "--release", "--no-debug"
         bin.install "bin/werk" => "werk"
     end
