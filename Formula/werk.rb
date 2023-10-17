@@ -7,6 +7,7 @@ class Werk < Formula
     license "MIT"
 
     depends_on "crystal" => :build
+    depends_on "openssl@3"
 
     def install
         ["src/werk.cr", "shard.yml"].each do |file|
