@@ -1,9 +1,9 @@
 class Werk < Formula
     desc "Dead simple task runner"
     homepage "https://itwerks.io"
-    url "https://github.com/marghidanu/werk/archive/0.7.6.tar.gz"
-    version "0.7.6"
-    sha256 "f0f4337df4ad27d65c6d9667797935447969e240ef2a80404cb93a96a9e0723c"
+    url "https://github.com/marghidanu/werk/archive/0.7.7.tar.gz"
+    version "0.7.7"
+    sha256 "4493af78b1566a5997b700f97264d51ecf1ee5950ad0ce44978cc596f4be59b7"
     license "MIT"
 
     depends_on "crystal" => :build
