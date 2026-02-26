@@ -1,9 +1,9 @@
 class Werk < Formula
     desc "Local CI pipeline runner with parallel execution and Docker support"
     homepage "https://github.com/marghidanu/werk"
-    url "https://github.com/marghidanu/werk/archive/0.8.0.tar.gz"
-    version "0.8.0"
-    sha256 "228d94924103de7240dd00b14d49f83815f121bf3acaf9e6bf280b966853b38b"
+    url "https://github.com/marghidanu/werk/archive/0.8.1.tar.gz"
+    version "0.8.1"
+    sha256 "ce66cff06e4e10bd68f0cce50789e52f2b88961578d8080a8eb45fa4e4df1d7a"
     license "MIT"
 
     depends_on "crystal" => :build
